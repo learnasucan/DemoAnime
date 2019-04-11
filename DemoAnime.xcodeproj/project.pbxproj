@@ -12,6 +12,8 @@
 		B01D9AE7225F1AE7009C13DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B01D9AE5225F1AE7009C13DC /* Main.storyboard */; };
 		B01D9AE9225F1AEE009C13DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B01D9AE8225F1AEE009C13DC /* Assets.xcassets */; };
 		B01D9AEC225F1AEE009C13DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B01D9AEA225F1AEE009C13DC /* LaunchScreen.storyboard */; };
+		B01D9AF6225F1D92009C13DC /* SlideLRAnimeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B01D9AF5225F1D92009C13DC /* SlideLRAnimeView.xib */; };
+		B01D9AF8225F1DB9009C13DC /* SlideLRAnimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01D9AF7225F1DB9009C13DC /* SlideLRAnimeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		B01D9AE8225F1AEE009C13DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B01D9AEB225F1AEE009C13DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B01D9AED225F1AEE009C13DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B01D9AF5225F1D92009C13DC /* SlideLRAnimeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideLRAnimeView.xib; sourceTree = "<group>"; };
+		B01D9AF7225F1DB9009C13DC /* SlideLRAnimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideLRAnimeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +60,12 @@
 			children = (
 				B01D9AE1225F1AE7009C13DC /* AppDelegate.swift */,
 				B01D9AE3225F1AE7009C13DC /* ViewController.swift */,
+				B01D9AF7225F1DB9009C13DC /* SlideLRAnimeView.swift */,
 				B01D9AE5225F1AE7009C13DC /* Main.storyboard */,
 				B01D9AE8225F1AEE009C13DC /* Assets.xcassets */,
 				B01D9AEA225F1AEE009C13DC /* LaunchScreen.storyboard */,
 				B01D9AED225F1AEE009C13DC /* Info.plist */,
+				B01D9AF5225F1D92009C13DC /* SlideLRAnimeView.xib */,
 			);
 			path = DemoAnime;
 			sourceTree = "<group>";
@@ -123,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B01D9AEC225F1AEE009C13DC /* LaunchScreen.storyboard in Resources */,
+				B01D9AF6225F1D92009C13DC /* SlideLRAnimeView.xib in Resources */,
 				B01D9AE9225F1AEE009C13DC /* Assets.xcassets in Resources */,
 				B01D9AE7225F1AE7009C13DC /* Main.storyboard in Resources */,
 			);
@@ -135,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B01D9AF8225F1DB9009C13DC /* SlideLRAnimeView.swift in Sources */,
 				B01D9AE4225F1AE7009C13DC /* ViewController.swift in Sources */,
 				B01D9AE2225F1AE7009C13DC /* AppDelegate.swift in Sources */,
 			);

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,96 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DemoAnime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kgI-q6-T3C" customClass="SlideLRAnimeView" customModule="DemoAnime" customModuleProvider="target">
+                                <rect key="frame" x="16" y="71" width="343" height="61"/>
+                                <color key="backgroundColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="BQm-MP-6JJ"/>
+                                    <constraint firstAttribute="width" constant="343" id="qgI-Ti-94Y"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="direction">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c0i-Dw-6fp" customClass="SlideLRAnimeView" customModule="DemoAnime" customModuleProvider="target">
+                                <rect key="frame" x="16" y="140" width="343" height="61"/>
+                                <color key="backgroundColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="60O-dz-cf1"/>
+                                    <constraint firstAttribute="width" constant="343" id="Clr-c6-EeE"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="direction">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fiq-ZI-4BM" customClass="SlideLRAnimeView" customModule="DemoAnime" customModuleProvider="target">
+                                <rect key="frame" x="16" y="209" width="343" height="61"/>
+                                <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="H7T-z2-rpl"/>
+                                    <constraint firstAttribute="width" constant="343" id="qhi-Fg-EoK"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="direction">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ntl-i1-iY2" customClass="SlideLRAnimeView" customModule="DemoAnime" customModuleProvider="target">
+                                <rect key="frame" x="16" y="278" width="343" height="61"/>
+                                <color key="backgroundColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="GNu-fr-ZgF"/>
+                                    <constraint firstAttribute="width" constant="343" id="Wic-t8-Svp"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="direction">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kgI-q6-T3C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="3kN-JH-uPN"/>
+                            <constraint firstItem="Ntl-i1-iY2" firstAttribute="trailing" secondItem="fiq-ZI-4BM" secondAttribute="trailing" id="6cf-G2-yoF"/>
+                            <constraint firstItem="fiq-ZI-4BM" firstAttribute="top" secondItem="c0i-Dw-6fp" secondAttribute="bottom" constant="8" id="8kg-z3-lW5"/>
+                            <constraint firstItem="c0i-Dw-6fp" firstAttribute="top" secondItem="kgI-q6-T3C" secondAttribute="bottom" constant="8" id="8t4-vk-rUW"/>
+                            <constraint firstItem="c0i-Dw-6fp" firstAttribute="trailing" secondItem="kgI-q6-T3C" secondAttribute="trailing" id="9av-km-89h"/>
+                            <constraint firstItem="Ntl-i1-iY2" firstAttribute="top" secondItem="fiq-ZI-4BM" secondAttribute="bottom" constant="8" id="HTh-X4-UJs"/>
+                            <constraint firstItem="c0i-Dw-6fp" firstAttribute="leading" secondItem="kgI-q6-T3C" secondAttribute="leading" id="NY9-cO-HUt"/>
+                            <constraint firstItem="Ntl-i1-iY2" firstAttribute="leading" secondItem="fiq-ZI-4BM" secondAttribute="leading" id="S8M-9C-AU1"/>
+                            <constraint firstItem="kgI-q6-T3C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UfT-OU-B0R"/>
+                            <constraint firstItem="fiq-ZI-4BM" firstAttribute="leading" secondItem="c0i-Dw-6fp" secondAttribute="leading" id="uSL-bY-LPh"/>
+                            <constraint firstItem="fiq-ZI-4BM" firstAttribute="trailing" secondItem="c0i-Dw-6fp" secondAttribute="trailing" id="zlj-Jj-N4o"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>
